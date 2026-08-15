@@ -4,6 +4,8 @@
 
 十二课按「疼痛驱动」推进：每一课先摆出一个具体做不到的场景，再补上解决它的那一件事——所以每个抽象在被命名之前，你已经先欠过它的债。下面的文件表就是这条债务链。
 
+**课程正文在 [`course/`](course/)**：一个自包含的双语 HTML，克隆下来用浏览器打开 `course/agent-harness-course.html` 即可（GitHub 不渲染仓库里的 HTML）。讲义里每一段 transcript 都是这里的代码真跑出来的输出。
+
 ## 准备
 
 需要 Node 22+ 和一个 DeepSeek API key：
