@@ -1,0 +1,7 @@
+调用 list_dir {"path":"fixtures"}
+结果 list_dir 成功 13 字
+调用 read_file {"path":"fixtures/notes.md","limit":3}
+结果 read_file 成功 43 字
+调用 read_file {"path":"fixtures/.env"}
+拦截 read_file
+结果 read_file 拒绝/失败 11 字
