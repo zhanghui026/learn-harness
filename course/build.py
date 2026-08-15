@@ -72,7 +72,7 @@ def outline(page: str) -> str:
     parts = []
     for anchor, zh, en in BANDS[:2]:
         parts.append('<a href="#%s">%s</a>' % (anchor, twin(zh, en)))
-    parts.append('<h4>%s</h4>' % twin('已开讲', 'PUBLISHED'))
+    parts.append('<h4>%s</h4>' % twin('全部十三课', 'ALL LESSONS'))
     for lid, zh, en, entries in lessons(page):
         parts.append('<div class="lead"><b>%s</b><a href="#%s">%s</a></div>' % (lid, lid.lower(), twin(zh, en)))
         parts.append('<div class="kids">%s</div>' % ''.join(

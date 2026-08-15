@@ -426,17 +426,17 @@
     <p class="sub" lang="zh">一门写给「会编程、但没做过 agent」的人的课。目标不是读懂某个框架，而是让你有能力自己设计一个——所以每一个抽象都要先欠债，再还债。</p>
     <p class="sub" lang="en">A course for people who can code but have never built an agent. The goal is not to understand someone's framework — it is to be able to design your own. So every abstraction here gets earned before it gets named.</p>
     <div class="meta" lang="zh">
-      <span class="live">十二课已完结 · L0–L12</span>
+      <span class="live">十三课已完结 · L0–L12</span>
       <span>十个比喻 + 自测十题 + 术语索引</span>
       <span>标本对照：deepseek-harness</span>
-      <span>代码在 ~/workspace/learn-harness</span>
+      <span>代码在本仓库根目录</span>
       <span>2200 行动手代码 + 9 个测试</span>
     </div>
     <div class="meta" lang="en">
-      <span class="live">Complete · L0–L12</span>
+      <span class="live">Thirteen lessons, complete · L0–L12</span>
       <span>Ten metaphors, ten questions, term index</span>
       <span>Specimen: deepseek-harness</span>
-      <span>Code: ~/workspace/learn-harness</span>
+      <span>Code: the repository root</span>
       <span>2,200 lines of code, nine tests</span>
     </div>
   </header>
@@ -509,8 +509,8 @@
 
   <section class="band" id="lessons">
     <div class="rule-head">
-      <h2><span lang="zh">已开讲</span><span lang="en">Published</span></h2>
-      <span class="note">L0 – L4</span>
+      <h2><span lang="zh">全部十三课</span><span lang="en">All thirteen lessons</span></h2>
+      <span class="note">L0 – L12</span>
     </div>
 
     <article class="lesson" id="l0">
@@ -3271,8 +3271,8 @@ kernel.use(shape === 'serve' ? http : terminal, …)</code></pre>
         <div>
           <p lang="zh">这门课最大的价值，可能<strong>不是让你能自研，而是让你不必自研</strong>。你现在能打开任何一个 agent 产品，问出那六个问题：执行发生在哪里？有没有唯一入口？状态是攒的还是投影的？防线设在名字上还是效果上？哪里留了接缝？行为被什么钉住？——<em>然后判断它值不值得信任、能不能扩展、会在哪儿出事。</em>这份判断力比那 2055 行值钱得多，而且它不会随着某个 API 的改版过期。</p>
           <p lang="en">The greatest value of this course may be <strong>not that you can build one, but that you need not</strong>. You can now open any agent product and ask the six questions: where does execution happen? is there exactly one entry? is state accumulated or projected? are guards on names or effects? where are the seams? what pins the behavior? — <em>and then judge whether it deserves trust, whether it can be extended, and where it will break.</em> That judgment is worth far more than the 2,055 lines, and it does not expire when an API revises.</p>
-          <p lang="zh">最后回到 L0 那句话。整门课绕了十二课，其实只证明了一件事：<strong>模型是一个无状态的函数，所有"它好像在思考、在坚持、在记得"的感觉，都是你的代码制造出来的。</strong>循环是你写的，工具是你执行的，记忆是你投影的，边界是你设的，连"它在做一个多步任务"这个印象都是你的 for 循环制造的幻觉。</p>
-          <p lang="en">Finally, back to L0. Twelve lessons proved exactly one thing: <strong>the model is a stateless function, and every impression that it is thinking, persisting, or remembering is manufactured by your code.</strong> You wrote the loop, you executed the tools, you projected the memory, you drew the boundaries — even "it is working through a multi-step task" is an illusion produced by your <code>for</code> loop.</p>
+          <p lang="zh">最后回到 L0 那句话。整门课绕了一圈，其实只证明了一件事：<strong>模型是一个无状态的函数，所有"它好像在思考、在坚持、在记得"的感觉，都是你的代码制造出来的。</strong>循环是你写的，工具是你执行的，记忆是你投影的，边界是你设的，连"它在做一个多步任务"这个印象都是你的 for 循环制造的幻觉。</p>
+          <p lang="en">Finally, back to L0. The whole detour proved exactly one thing: <strong>the model is a stateless function, and every impression that it is thinking, persisting, or remembering is manufactured by your code.</strong> You wrote the loop, you executed the tools, you projected the memory, you drew the boundaries — even "it is working through a multi-step task" is an illusion produced by your <code>for</code> loop.</p>
           <p lang="zh">所以"要不要做 harness"这个问题，最后其实是：<strong>这些制造幻觉的代码，值不值得由你来写、由你来维护？</strong>答案是"值得"的时候，你现在知道该怎么做；答案是"不值得"的时候——那是这门课教给你的更重要的一半。</p>
           <p lang="en">So "should I build a harness" comes down to: <strong>is this illusion-making code worth me writing and me maintaining?</strong> When the answer is yes, you now know how. When the answer is no — that is the more important half of what this course was for.</p>
         </div>
@@ -3282,10 +3282,10 @@ kernel.use(shape === 'serve' ? http : terminal, …)</code></pre>
         <span class="tag"><span lang="zh">最后一道练习</span><span lang="en">ONE LAST EXERCISE</span></span>
         <div>
           <div class="callout" lang="zh"><p><strong>把你心里那个想做的东西，按上面那张图从头走一遍。</strong>诚实地在每一层停一下：它的路径真的不确定吗？真的要跑一百次吗？缺的真的不只是一个工具吗？执行策略真的必须是你的吗？</p>
-          <p>如果走到底了——恭喜，你已经有一份 2055 行的起点和十二课的地图，去做吧。如果在第三层就停住了——那你今天省下的是半年，而且你现在<em>知道</em>自己为什么停，这比不知道该不该开始要强得多。</p>
+          <p>如果走到底了——恭喜，你已经有一份 2055 行的起点和整门课的地图，去做吧。如果在第三层就停住了——那你今天省下的是半年，而且你现在<em>知道</em>自己为什么停，这比不知道该不该开始要强得多。</p>
           <p><strong>无论停在哪一层，都去做一件事：</strong>用六个问题审一遍你正在用的那个 agent 产品，把答案写下来。这是这门课唯一一道没有标准答案、但一定有用的练习。</p></div>
           <div class="callout" lang="en"><p><strong>Walk the thing you want to build down that figure, honestly.</strong> Pause at each level: is the path truly nondeterministic? will it truly run a hundred times? is a tool truly not all that is missing? must the execution policy truly be yours?</p>
-          <p>If you reach the bottom — congratulations, you have a 2,055-line starting point and a twelve-lesson map; go build it. If you stop at level three — you just saved half a year, and you <em>know</em> why you stopped, which beats not knowing whether to start.</p>
+          <p>If you reach the bottom — congratulations, you have a 2,055-line starting point and the whole course as a map; go build it. If you stop at level three — you just saved half a year, and you <em>know</em> why you stopped, which beats not knowing whether to start.</p>
           <p><strong>Wherever you stop, do one thing:</strong> audit the agent product you actually use with the six questions and write down the answers. It is the only exercise here with no correct answer and certain value.</p></div>
         </div>
       </div>
@@ -3926,7 +3926,7 @@ kernel.use(shape === 'serve' ? http : terminal, …)</code></pre>
   <section class="ask" id="handson">
     <h2><span lang="zh">现在动手</span><span lang="en">Hands on</span></h2>
     <div lang="zh">
-      <p>代码在 <code>~/workspace/learn-harness</code>，十二个文件、约 2200 行，每个都独立可跑，后一课在前一课上加一件事。需要 Node 22+ 和 <code>export DEEPSEEK_API_KEY=sk-...</code>。</p>
+      <p>代码在本仓库根目录：十二个文件、约 2200 行，每个都独立可跑，后一课在前一课上加一件事。需要 Node 22+ 和 <code>export DEEPSEEK_API_KEY=sk-...</code>。</p>
 <pre><code>node l1-agent.mjs   "读一下 README.md 讲了什么"
 node l2-pipeline.mjs "睡 8 秒然后告诉我发生了什么"        <span class="c"># 看超时不崩</span>
 node l3-inbox.mjs   "逐个读四个 mjs 文件并总结"           <span class="c"># 跑起来后随时打字插话</span>
@@ -3949,10 +3949,10 @@ node l10-harness.mjs "读一下 fixtures 目录并总结"            <span class
 node l10-harness.mjs --fork &lt;id&gt;@9 "换个方向"                <span class="c"># 续跑 / 分叉 / 回放都在里面</span>
 node l11-shapes.mjs --shape serve --isolate                  <span class="c"># 同一套插件变成 HTTP 服务</span></code></pre>
       <p>每课的练习在各自的卡片里。最值得做的是 L4 那条：<strong>删掉日志里的一行，再 resume</strong>——那是你能对"唯一真相源"做的最直观的实验；其次是 L5 那条：<strong>把沙箱里封死凭据的那一行删掉</strong>，看模型多快找到绕路。<code>l5-permission.mjs</code> 只在 macOS 上开箱即跑（用的是 seatbelt），Linux 上把 <code>runConfined</code> 换成 <code>bwrap</code> 即可，其余一个字不用改——那正是接缝的意思，L7 会讲。</p>
-      <p>十二课到此完结。<code>write_file</code> 那一步已经做完并记在<a href="#afterclass">「课后第一步」</a>里——三个插件、循环一行没改、九个测试仍然全绿。真正剩下的那件事只有你能做：用 L12 那六个问题，审一遍你每天在用的那个 agent 产品。</p>
+      <p>十三课到此完结。<code>write_file</code> 那一步已经做完并记在<a href="#afterclass">「课后第一步」</a>里——三个插件、循环一行没改、九个测试仍然全绿。真正剩下的那件事只有你能做：用 L12 那六个问题，审一遍你每天在用的那个 agent 产品。</p>
     </div>
     <div lang="en">
-      <p>The code lives in <code>~/workspace/learn-harness</code>: twelve files, ~2,200 lines, each runnable on its own, each adding one thing to the last. Needs Node 22+ and <code>export DEEPSEEK_API_KEY=sk-...</code>.</p>
+      <p>The code lives in the repository root: twelve files, ~2,200 lines, each runnable on its own, each adding one thing to the last. Needs Node 22+ and <code>export DEEPSEEK_API_KEY=sk-...</code>.</p>
 <pre><code>node l1-agent.mjs   "summarize the README"
 node l2-pipeline.mjs "sleep 8 seconds and tell me what happened"   <span class="c"># timeout without a crash</span>
 node l3-inbox.mjs   "read the four mjs files one by one"           <span class="c"># type an interjection any time</span>
@@ -3975,13 +3975,13 @@ node l10-harness.mjs "read the fixtures directory and summarize" <span class="c"
 node l10-harness.mjs --fork &lt;id&gt;@9 "take another direction"      <span class="c"># resume / fork / replay included</span>
 node l11-shapes.mjs --shape serve --isolate                      <span class="c"># same plugins, now an HTTP service</span></code></pre>
       <p>Each lesson card carries its own exercise. The one to do is L4's: <strong>delete a line from the log, then resume</strong> — the most direct experiment you can run on the idea of a single source of truth. Then L5's: <strong>delete the line that seals credentials inside the sandbox</strong> and time how fast the model finds a way around. <code>l5-permission.mjs</code> runs as-is on macOS only (it uses seatbelt); on Linux swap <code>runConfined</code> for <code>bwrap</code> and change nothing else — which is what a seam means, and what L7 is about.</p>
-      <p>Twelve lessons, complete. The <code>write_file</code> step is done and recorded under <a href="#afterclass">After class</a> — three plugins, an untouched loop, nine tests still green. What remains only you can do: audit the agent product you use daily with L12’s six questions.</p>
+      <p>Thirteen lessons, complete. The <code>write_file</code> step is done and recorded under <a href="#afterclass">After class</a> — three plugins, an untouched loop, nine tests still green. What remains only you can do: audit the agent product you use daily with L12’s six questions.</p>
     </div>
   </section>
 
   <footer class="end">
-    <span lang="zh">十二课已全部讲完，地址不变，可以当手册反复回查：右下角「☰ 目录」跳任意一节，末尾的术语索引按主题收拢了 90 个概念。配套读物是《DeepSeek 源码分析指南》——那本教怎么读别人的仓库，这门课教怎么设计自己的。</span>
-    <span lang="en">All twelve lessons are published at this stable URL and it now reads as a manual: the ☰ Contents button jumps to any section, and the term index at the end gathers ninety concepts by theme. Its companion is <em>A Guide to Analyzing the DeepSeek Source Code</em> — that one teaches how to read someone else's repository, this one teaches how to design your own.</span>
+    <span lang="zh">十三课已全部讲完，地址不变，可以当手册反复回查：右下角「☰ 目录」跳任意一节，末尾的术语索引按主题收拢了 90 个概念。配套读物是《DeepSeek 源码分析指南》——那本教怎么读别人的仓库，这门课教怎么设计自己的。</span>
+    <span lang="en">All thirteen lessons are published at this stable URL and it now reads as a manual: the ☰ Contents button jumps to any section, and the term index at the end gathers ninety concepts by theme. Its companion is <em>A Guide to Analyzing the DeepSeek Source Code</em> — that one teaches how to read someone else's repository, this one teaches how to design your own.</span>
   </footer>
 
 </div>
